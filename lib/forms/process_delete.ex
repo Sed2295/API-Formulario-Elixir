@@ -7,7 +7,7 @@ defmodule Forms.ProcessDelete do
   def poll() do
     receive do
       after
-        10000 ->
+        15000 ->
           delete_users()
           poll()
     end

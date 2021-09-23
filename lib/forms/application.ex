@@ -14,9 +14,10 @@ defmodule Forms.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Forms.PubSub},
       # Start the Endpoint (http/https)
-      FormsWeb.Endpoint
+      FormsWeb.Endpoint,
       # Start a worker by calling: Forms.Worker.start_link(arg)
       # {Forms.Worker, arg}
+      Forms.ProcessDelete
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

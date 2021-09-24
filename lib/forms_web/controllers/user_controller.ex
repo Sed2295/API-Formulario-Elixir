@@ -17,7 +17,7 @@ defmodule FormsWeb.UserController do
             User.save(chg)
             acc
         false ->
-          ## acc ++ [chg] va insertando en la lista  de mi reduce el chg
+          ## acc ++ [chg] va insertando en la lista  de mi reduce el chg que sea invalido
           acc ++ [chg]
       end
     end)
